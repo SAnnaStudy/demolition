@@ -1,0 +1,126 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+.reviewsPart{
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.slick-slide > div{
+  margin: 0 5px;
+}
+.slick-list{
+  margin: 0 -5px;
+}
+.reviewsPart__reviewsPart__title{
+  margin: auto;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.reviewsPart__slide-container{
+  width: 90%;
+  padding: 40px 0;
+}
+.reviewsPart__slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.reviewsPart__card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.reviewsPart__image-content,
+.reviewsPart__card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.reviewsPart__image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.reviewsPart__overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #7f7f7f;
+  border-radius: 25px 25px 0 25px;
+}
+.reviewsPart__overlay::before,
+.reviewsPart__overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #7f7f7f;
+}
+.reviewsPart__overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.reviewsPart__card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.reviewsPart__card-image .reviewsPart__card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgb(39, 39, 39);
+}
+.reviewsPart__name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.reviewsPart__description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.reviewsPart__swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.reviewsPart__swiper-navBtn:hover{
+  color: #4070F4;
+}
+.reviewsPart__swiper-navBtn::before,
+.reviewsPart__swiper-navBtn::after{
+  font-size: 35px;
+}
+.reviewsPart__swiper-button-next{
+  right: 0;
+}
+.reviewsPart__swiper-button-prev{
+  left: 0;
+}
+.reviewsPart__swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.reviewsPart__swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .reviewsPart__slide-content{
+    margin: 0 10px;
+  }
+  .reviewsPart__swiper-navBtn{
+    display: none;
+  }
+}

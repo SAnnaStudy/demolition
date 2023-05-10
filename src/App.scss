@@ -1,0 +1,16 @@
+@import './styles/variables.scss';
+
+.App {
+  width: 90%;
+  margin-top: 50px;
+  margin: auto;
+  background-color: $ContainerColor;
+  border-radius: 5px;
+}
+body{
+  background-color: $MainColor;
+  font-family: $Poppins
+}
+#root{
+  height: 100%;
+}
